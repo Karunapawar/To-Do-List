@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  background-color: rgb(201, 135, 243);
+}
+
+.main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center-container{
+  height: 500px;
+  width: 450px;
+}
+
+.app-heading{
+  padding: 4px;
+  color: white;
+}
+
+
+.add-btn{
+  color: rgb(243, 243, 247);
+  background-color: rgb(246, 4, 169);
+  border-radius: 100%;
+  border: 2px solid rgb(251, 154, 224);
+  cursor: pointer;
+  width: 50px; 
+  height: 50px; 
+}
+.list-item {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligns the text and icon at the top */
+  padding: 10px;
+  background-color: #ed84f1;
+  border-radius: 5px;
+}
+
+.list-item span:first-child {
+  flex-grow: 1;
+  margin-right: 10px;
+  word-break: break-word; /* Ensures long words break and wrap */
+  overflow-wrap: break-word; /* Ensures wrapping on word boundaries */
+}
+
+.icons {
+  flex-shrink: 0;
+  cursor: pointer;
+  margin-left: 10px; /* Optional: Adds space between text and icon */
+  align-self: flex-start; /* Ensures the icon stays at the top */
+}
+
+.input-box-todo{
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 20px; /* Adjust this value to control the roundness */
+  font-size: 16px;
+  width: 350px;
+}
